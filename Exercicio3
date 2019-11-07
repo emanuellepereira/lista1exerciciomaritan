@@ -1,0 +1,50 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+int main(){
+    float x, x1=0, x2=0, x3=0, x4=0, x5=0, x6=0, i=0;
+
+    cout << "Jogue o dado!" << endl;
+    cout << "Digite qual a face o dado caiu com o lado para cima: (de 1 a 6) " << endl;
+
+    while(1){
+        cin >> x;
+
+        if(x==1){
+            x1++;
+            i++;
+        }
+        if(x==2){
+            x2++;
+            i++;
+        }
+        if(x==3){
+            x3++;
+            i++;
+        }
+        if(x==4){
+            x4++;
+            i++;
+        }
+        if(x==5){
+            x5++;
+            i++;
+        }
+        if(x==6){
+            x6++;
+            i++;
+        }
+        if(x==0){
+            break;
+        }
+    }
+
+    cout << "A face 1 apareceu em " << (x1/i)*100 << "% das vezes!" << endl;
+    cout << "A face 2 apareceu em " << (x2/i)*100 << "% das vezes!" << endl;
+    cout << "A face 3 apareceu em " << (x3/i)*100 << "% das vezes!" << endl;
+    cout << "A face 4 apareceu em " << (x4/i)*100 << "% das vezes!" << endl;
+    cout << "A face 5 apareceu em " << (x5/i)*100 << "% das vezes!" << endl;
+    cout << "A face 6 apareceu em " << (x6/i)*100 << "% das vezes!" << endl;
+
+}
