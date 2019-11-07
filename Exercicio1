@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+    int x, aux, maior=0;
+
+    cout << "Digite alguns numeros:\n" << endl;
+    do{
+     cin >> x;
+        if(x > maior){
+            maior = x;
+        }
+    }while(x!=0);
+
+    cout << "O maior valor digitado nessa sequência foi: " << maior <<endl;
+}
